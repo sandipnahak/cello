@@ -2,7 +2,7 @@ arguments:
   init:
     - "-no-color"
   execute:
-    - "-auto-approve -no-color"
+    - "-no-color"
 environment_variables:
   AWS_REGION: us-west-2
   CODE_URI: https://github.com/cello-proj/cello/releases/download/v0.4.6/terraform-example.tar.gz
@@ -10,7 +10,7 @@ environment_variables:
 framework: terraform
 parameters:
   execute_container_image_uri: celloproj/cello-terraform:0.15.1
-project_name: project1
-target_name: target1
+project_name: terraform
+target_name: deploy
 type: diff
 workflow_template_name: cello-single-step-vault-aws
